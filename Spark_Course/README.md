@@ -48,3 +48,22 @@ reduceByKey, sortByKey
 nameDict = sc.broadcast(loadMovieNames())
 
 map (like app in pandas)
+
+
+[09 SparkSQL](https://github.com/dongzhang84/PySpark/blob/master/Spark_Course/09_SparkSQL.ipynb):
+
+Very useful to use show() for DataFrame
+ 
+movieDataset = spark.createDataFrame(movies)
+
+movieDataset.show()
+
+schemaPeople = spark.createDataFrame(people).cache()
+schemaPeople.createOrReplaceTempView("people")
+schemaPeople.show()
+
+I can also use groupBy:
+
+topMovieIDs = movieDataset.groupBy("movieID").count().orderBy("count", ascending=False).cache()
+
+This is similar to Pandas.
