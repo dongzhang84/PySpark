@@ -22,7 +22,7 @@ stationTemps = minTemps.map(lambda x: (x[0], x[2]))
 minTemps = stationTemps.reduceByKey(lambda x, y: min(x,y))
 results = minTemps.collect()
 
-[04](Word Count)(https://github.com/dongzhang84/PySpark/blob/master/Spark_Course/04_word_count.ipynb)
+[04 Word Count](https://github.com/dongzhang84/PySpark/blob/master/Spark_Course/04_word_count.ipynb):
 
 Split Word:
 
@@ -32,3 +32,19 @@ words = input.flatMap(lambda x: x.split())
 Count by Value:
 
 wordCounts = words.countByValue()
+
+
+[05 Customer Orders](https://github.com/dongzhang84/PySpark/blob/master/Spark_Course/05_customer_orders.ipynb):
+
+Reduce by Key (something like groupby in pandas)
+
+totalByCustomer = mappedInput.reduceByKey(lambda x, y: x + y)
+
+
+[06 Popular Movies](https://github.com/dongzhang84/PySpark/blob/master/Spark_Course/06_Popular_Movies.ipynb):
+
+reduceByKey, sortByKey
+
+nameDict = sc.broadcast(loadMovieNames())
+
+map (like app in pandas)
