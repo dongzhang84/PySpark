@@ -54,13 +54,12 @@ map (like app in pandas)
 
 Very useful to use show() for DataFrame
  
-movieDataset = spark.createDataFrame(movies)
+    movieDataset = spark.createDataFrame(movies)
+    movieDataset.show()
 
-movieDataset.show()
-
-schemaPeople = spark.createDataFrame(people).cache()
-schemaPeople.createOrReplaceTempView("people")
-schemaPeople.show()
+    schemaPeople = spark.createDataFrame(people).cache()
+    schemaPeople.createOrReplaceTempView("people")
+    schemaPeople.show()
 
 I can also use groupBy:
 
