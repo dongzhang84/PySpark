@@ -11,4 +11,6 @@ test 2: follow this [link](https://towardsdatascience.com/3-methods-for-parallel
 
 ### Local Notebook
 
-[PySpark + MySQL](https://github.com/dongzhang84/PySpark/blob/master/PySpark%2BMySQL_beginning.ipynb)
+[PySpark + MySQL test1](https://github.com/dongzhang84/PySpark/blob/master/PySpark%2BMySQL_beginning.ipynb)
+[PySpark + MySQL iris](https://github.com/dongzhang84/PySpark/blob/master/PySpark%2BMySQL_iris.ipynb)
+
