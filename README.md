@@ -15,3 +15,5 @@ test 2: follow this [link](https://towardsdatascience.com/3-methods-for-parallel
 
 [PySpark + MySQL iris](https://github.com/dongzhang84/PySpark/blob/master/PySpark%2BMySQL_iris.ipynb)
 
+[PySpqrk + PostgresSQL_iris](https://github.com/dongzhang84/PySpark/blob/master/PySpark%2BPostgresSQL_connection_iris.ipynb)
+
